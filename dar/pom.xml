@@ -32,6 +32,8 @@
                 <configuration>
                     <serverAddress>localhost</serverAddress>
                     <applicationName>PetDocker</applicationName>
+                         <username>admin</username>
+                         <password>admin</password>
                     <deploymentPackageProperties>
                         <orchestrator>
                             <value>parallel-by-deployment-group</value>
