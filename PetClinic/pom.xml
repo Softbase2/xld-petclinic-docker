@@ -29,7 +29,8 @@
                             <goal>build</goal>
                         </goals>
                         <configuration>
-                                 <machine><name>registry-machine</name></machine>
+                                <dockerHost>https://192.168.99.100:2376</dockerHost>
+                                <certPath>C:\Users\Demo\.docker\machine\machines\registry-machine</certPath>
                             <images>
                                 <image>
                                     <name>bmoussaud/petclinic:${petclinic.image.version}</name>
@@ -53,7 +54,8 @@
                         </goals>
                         <configuration>
                                  
-                                 <machine><name>registry-machine</name></machine>
+                               <dockerHost>https://192.168.99.100:2376</dockerHost>
+                                <certPath>C:\Users\Demo\.docker\machine\machines\registry-machine</certPath>
                             <images>
                                 <image>
                                     <name>bmoussaud/petclinic:${petclinic.image.version}</name>
