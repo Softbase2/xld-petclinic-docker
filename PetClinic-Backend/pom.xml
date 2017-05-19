@@ -39,7 +39,8 @@
                             <goal>build</goal>
                         </goals>
                         <configuration>
-                                 <machine><name>registry-machine</name></machine>
+                                 <dockerHost>https://192.168.99.100:2376</dockerHost>
+                                <certPath>C:\Users\Demo\.docker\machine\machines\registry-machine</certPath>
                             <images>
                                 <image>
                                     <name>bmoussaud/petclinic-backend:${petclinic-backend.image.version}</name>
@@ -62,7 +63,8 @@
                             <goal>push</goal>
                         </goals>
                         <configuration>
-                                 <machine><name>registry-machine</name></machine>
+                                 <dockerHost>https://192.168.99.100:2376</dockerHost>
+                                <certPath>C:\Users\Demo\.docker\machine\machines\registry-machine</certPath>
                             <images>
                                 <image>
                                     <name>bmoussaud/petclinic-backend:${petclinic-backend.image.version}</name>
@@ -78,6 +80,7 @@
                         </configuration>
                     </execution>
 
+                         <!--
                     <execution>
                         <id>push-docker-hub</id>
                         <phase>install</phase>
@@ -99,6 +102,8 @@
                             </images>
                         </configuration>
                     </execution>
+
+-->
                 </executions>
             </plugin>
 
