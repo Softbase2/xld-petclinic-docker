@@ -39,6 +39,7 @@
                             <goal>build</goal>
                         </goals>
                         <configuration>
+                                 <machine><name>registry-machine</name></machine>
                             <images>
                                 <image>
                                     <name>bmoussaud/petclinic-backend:${petclinic-backend.image.version}</name>
@@ -61,6 +62,7 @@
                             <goal>push</goal>
                         </goals>
                         <configuration>
+                                 <machine><name>registry-machine</name></machine>
                             <images>
                                 <image>
                                     <name>bmoussaud/petclinic-backend:${petclinic-backend.image.version}</name>
